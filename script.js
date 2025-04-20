@@ -22,8 +22,20 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log(tasks);
   });
 
+  // todoInput.addEventListener("keypress", function (e) {
+  //   if (e.key === "Enter") {
+  //     addTaskButton.click();
+  //   }
+  // });
+
   function renderTask(task) {
-    console.log(task);
+    const li = document.createElement("li");
+    li.setAttribute("data-id", task.id);
+    li.innerHTML = `
+    <span>${task.text}</span>
+    <button>delete</button>
+    `;
+    todoList.appendChild(li);
   }
 
   function saveTasks() {
