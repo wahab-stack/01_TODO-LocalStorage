@@ -39,6 +39,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /*
 
+// Hitesh choudhary method 
+
 document.addEventListener("DOMContentLoaded", () => {
   const todoInput = document.getElementById("todo-input");
   const addTaskButton = document.getElementById("add-task-btn");
